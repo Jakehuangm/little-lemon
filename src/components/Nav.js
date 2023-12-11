@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../logo.svg'; 
+import { Link } from 'react-router-dom';
+import logo from '../logo.svg';
 
 function Nav() {
   return (
     <nav>
         <img src={logo} alt="Little Lemon Logo" className="App-logo" />
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/booking">Booking</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
         </ul>
     </nav>
   );
