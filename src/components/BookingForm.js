@@ -6,10 +6,10 @@ function BookingForm({ availableTimes, dispatch }) {
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
-  
+
 
   // Handler functions
-  
+
   const handleDateChange = (event) => {
     setDate(event.target.value);
     // Dispatch an action to update available times based on the selected date
